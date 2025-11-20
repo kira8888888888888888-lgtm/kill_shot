@@ -34,7 +34,7 @@ function Registration() {
         }
       })
       .catch(err => {
-        console.error('Failed to fetch CSRF token:', err);
+        
         setBackendMessage('Could not fetch CSRF token. Please reload the page.');
       });
   }, []);
