@@ -1,0 +1,383 @@
+/* === Общие стили для панели администратора === */
+.admin-panel {
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+  background-color: aliceblue;
+  background-image: url('https://unblast.com/wp-content/uploads/2021/01/Space-Background-Images.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.admin-panel__title {
+  font-size: 22px;
+  color: white;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.admin-panel__subtitle {
+  font-size: 20px;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.user-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.user-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  background-color: black;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.user-info {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+}
+.user-info > span {
+  color:#ccc;
+}
+
+.user-actions {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+}
+.user-email{
+    font-size: 15px;
+}
+.user-verified{
+    font-size: 15px;
+}
+.user-binance-code{
+    font-size: 15px;
+}
+.btn {
+  padding: 4px 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.btn-edit {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.btn-edit:hover {
+  background-color: #45a049;
+}
+
+.btn-delete {
+  background-color: #f44336;
+  color: white;
+}
+
+.btn-delete:hover {
+  background-color: #d32f2f;
+}
+
+/* === Модальное окно === */
+.modal-overlay_admin {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  overflow: auto;
+  animation: fadeIn_admin 0.3s ease-out;
+}
+
+/* Плавное появление модального окна */
+@keyframes fadeIn_admin {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.modal-content_admin {
+  background-color: #202020;
+  border-radius: 12px;
+  max-width: 650px;
+  width: 90%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  animation: slideIn_admin 0.4s ease-out;
+}
+
+/* Плавное вхождение модального окна */
+@keyframes slideIn_admin {
+  from {
+    transform: translateY(-100px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+/* === Заголовок модального окна === */
+.edit-user-form__header_admin {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #cccccc44;
+}
+
+.withdraw-item_admin > p{
+  font-size: 12px;
+  color: #f9f9f9;
+}
+
+.withdraw-item_admin > input{
+  width: 25%;
+  background-color: black;
+  font-size: 12px;
+  color: #ccc;
+  padding: 4px;
+}
+
+
+.withdraw-item_admin{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-top: 2%;
+}
+
+h3_admin {
+  font-size: 28px;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.close-btn_admin {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 4px 7px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 12px;
+  margin-top: 3%;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.close-btn_admin:hover {
+  background-color: #d32f2f;
+  transform: scale(1.1);
+}
+
+.close-btn_admin:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* === Поля ввода === */
+.form-group_admin {
+  margin-bottom: 20px;
+}
+.form-group_admin > label {
+  color: #ccc;
+  font-size: 14px;
+}
+.invited-friend-item_admin > span {
+  font-size: 14px;
+  color: #ccc;
+}
+.withdraw-history_admin > p{
+  color: #ccc;
+  font-size: 15px;
+}
+.invited-friend-item_admin{
+  display: flex;
+  gap: 2%;
+  align-items: baseline;
+}
+.btn-remove-friend{
+  background-color: #f44336;
+  color: white;
+}
+.form-input_admin {
+  color: white;
+  width: 100%;
+  background-color:#0000007a;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+  margin-top: 8px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-input_admin:focus {
+  outline: none;
+  box-shadow: 0 0 8px rgba(76, 107, 175, 0.3);
+}
+
+.form-checkbox_admin {
+  padding-left: 20%;
+  margin-top: 8px;
+  transform: scale(.9);
+}
+
+/* === Балансы === */
+.balances-inputs_admin {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  
+}
+
+.balance-item_admin {
+  flex: 1 1 45%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.balance-label_admin {
+  width: 15%;
+  font-size: 12px;
+  color:#ccc ;
+  margin-right: 10px;
+}
+
+.balance-input_admin {
+  width: 80%;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.balance-input_admin:focus {
+  outline: none;
+  border:none;
+  box-shadow: 0 0 8px rgba(76, 107, 175, 0.3);
+}
+
+/* === Сообщение === */
+.message-input_admin {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  margin-top: 8px;
+  resize: vertical;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.message-input_admin:focus {
+  outline: none;
+  border-color: #4CAF50;
+  box-shadow: 0 0 8px rgba(76, 107, 175, 0.3);
+}
+
+/* === Кнопки === */
+.form-actions_admin {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.btn_admin {
+  padding: 10px 24px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  width: 48%;
+  border: none;
+}
+
+.btn-save_admin {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.btn-save_admin:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
+}
+
+.btn-send-message_admin {
+  background-color: #3498db;
+  color: white;
+}
+
+.btn-send-message_admin:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+}
+
+.btn_admin:active {
+  transform: translateY(2px);
+}
+
+.btn-send-message_admin:focus,
+.btn-save_admin:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* === Адаптивность === */
+@media (max-width: 768px) {
+  .modal-content_admin {
+    width: 75%;
+    height: 85%;
+    overflow-x: scroll;
+  }
+
+  .form-input_admin {
+    border: none;
+    width: 94%;
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  .balance-item_admin {
+    flex: 1 1 100%;
+  }
+
+  .btn_admin {
+    margin-bottom: 10px;
+  }
+}
+.search-bar {
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 15px;
+}

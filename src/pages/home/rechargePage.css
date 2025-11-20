@@ -1,0 +1,126 @@
+.page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #106cf5;
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+  color: #fff;
+}
+.withdraw-button{
+  margin-top: 2%;
+    padding: 6px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.status-message{
+  margin: 0 auto;
+  width: 70%;
+  padding-top: 4%;
+  color: red;
+  font-size: 14px;
+}
+/* HEADER — только input */
+.recharge-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  background-color: #106cf5;
+}
+
+.search-box {
+  width: 100%;
+  max-width: 400px;
+}
+.content_title{
+    color: black;
+}
+.search-box input {
+  width: 93%;
+  padding: 10px 12px;
+  font-size: 15px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  background: rgba(255, 255, 255, 0.25);
+  color: #fff;
+  transition: background 0.2s, box-shadow 0.2s;
+}
+
+.search-box input::placeholder {
+  color: #ffffffcc;
+}
+
+.search-box input:focus {
+  background: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 0 4px rgba(255, 255, 255, 0.4);
+}
+
+/* CONTENT */
+.content {
+  flex: 1;
+  background: #f2f4f7;
+  color: #131419;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding: 20px;
+}
+
+.content h3 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+/* Currency list */
+.currencies {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.currency-item {
+  background: #fff;
+  border-radius: 8px;
+  height: 62px;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+  text-decoration: none;
+  color: inherit;
+}
+
+.currency-item:hover {
+  background: #f9f9f9;
+  transform: translateY(-1px);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+}
+
+.currency-item.active {
+  background: #e6efff;
+  border: 1px solid #106cf5;
+}
+
+.currency-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.currency-info img {
+  width: 24px;
+  height: 24px;
+}
+
+.currency-info span {
+  font-size: 14px;
+  font-weight: 500;
+}

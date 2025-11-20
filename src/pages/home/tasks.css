@@ -1,0 +1,73 @@
+.tasks_taksks_parent_div{
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid rgb(8, 60, 105);
+    padding: 3%;
+    border-radius: 2%;
+    margin-bottom: 8%;
+}
+.tasks_taksks_parent_div > h2 {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-size: 13px;
+}
+
+.tasks_taksks_parent_div > button {
+    width: 100%;
+    font-size: 13x;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(8, 60, 105);
+    color: aliceblue;
+    padding: 9px;
+    border: none;
+}
+.tasks_big_h1{
+    color: rgba(240, 248, 255, 0.695);
+    font-size: 20px;
+    margin-top: 5%;
+    text-align: center;
+}
+.tasks_total_value{
+    padding-top: 2%;
+    padding-bottom: 5%;
+    font-size: 17px;
+    text-align: center;
+}
+
+.tasks_taksks_parent_div > img{
+    border-radius: 2%;
+    width: 100%;
+}
+
+
+.tasks_taksks_parent_div_last{
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid rgb(8, 60, 105);
+    padding: 3%;
+    border-radius: 2%;
+    margin-bottom: 30%;
+}
+.tasks_taksks_parent_div_last > h2 {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-size: 13px;
+}
+
+.tasks_taksks_parent_div_last > button {
+    width: 100%;
+    font-size: 13x;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(8, 60, 105);
+    color: aliceblue;
+    padding: 9px;
+    border: none;
+}
+
+
+.tasks_taksks_parent_div_last > img{
+    border-radius: 2%;
+    width: 100%;
+}

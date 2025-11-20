@@ -1,0 +1,60 @@
+.footer_parent_div{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 8%;
+    padding-bottom: 5%;
+}
+
+.footer_small_right_div{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+.footer_small_left_div_img{
+    height: 2.875rem;
+}
+.footer_small_left_div_p{
+    font-size: 2.25rem;
+    margin-left: .625rem;
+    color: #999999;
+}
+.footer_small_right_div_second_for_arrow{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #c05bdd;;
+    padding: 10px;
+    margin-bottom: 2%;
+}
+.footer_small_right_div_second_parent{
+    padding: 3%;
+}
+.footer_small_right_div_second_arrow{
+    font-size: 1.8rem;
+}
+.footer_copytight{
+    font-size: 0.75rem;
+    padding-top: 2%;
+    margin-bottom: 17%;
+}
+.footer_second_div_h2{
+    font-size: 1.125rem;
+    color:#999999;
+    padding-bottom: 10%;
+}
+.footer_second_div_p1{
+    padding-bottom: 10%;
+}
+/* Hide all <p> tags by default */
+.footer_small_right_div_second_parent p {
+  display: none;
+}
+
+/* Show <p> tags when the arrow is hovered */
+.footer_small_right_div_second_for_arrow:hover ~ p {
+  display: block;
+}
+.footer_small_right_div_second{
+    display: none;
+}
+

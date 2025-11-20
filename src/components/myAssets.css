@@ -1,0 +1,220 @@
+/* MyAssets.css */
+
+/* Общие стили */
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: white;
+}
+
+/* Header */
+.header {
+  background-color: #106cf5;
+  background-image: url('../images/assetsCard.png');
+  background-repeat: no-repeat;
+  padding: 6% 11%;
+  color: #fff;
+  position: relative;
+  background-size: cover;
+}
+
+.header .header-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header .header-content img {
+  width: 22px;
+  height: 14px;
+}
+.eye-icon{
+    font-size: 60%;
+    padding-left: 2%;
+}
+
+.header .title {
+  font-weight: 600;
+  font-size: 17px;
+  color: white;
+  padding-top: 3%;
+}
+
+
+.header .asset-valuation p {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.header .valuation-amount {
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 8px;
+  color: white;
+}
+
+.header .valuation-estimate {
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+/* Action Buttons */
+.action-buttons {
+  display: flex;
+  gap: 8px;
+  padding: 16px 20px;
+}
+
+.action-buttons .action {
+  flex: 1;
+  background: #f2f4f7;
+  border-radius: 8px;
+  padding: 10px 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+.action-buttons .action img {
+  width: 23px;
+  height: 23px;
+  margin-bottom: 4px;
+}
+
+.action-buttons .action div {
+  font-size: 14px;
+  font-weight: 300;
+  color: #000000de;
+}
+
+/* Tabs */
+.tabs2 {
+  display: flex;
+  justify-content: center;  /* Центрирует вкладки по горизонтали */
+  margin-top: 16px;
+  width: 100%;
+}
+
+.tabs2 .tab {
+  flex: 1;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  border-radius: 4px;
+  margin-right: 8px;
+  background: #dbe0e7;
+  color: #000;
+  cursor: pointer;
+}
+
+.tabs2 .tab.active {
+  background: #106cf5;
+  color: #fff;
+}
+
+.tabs2 .tab:last-child {
+  margin-right: 0;  /* Убираем отступ у последней вкладки */
+}
+
+/* Asset List */
+.asset-list {
+  margin-top: 16px;
+  margin-bottom: 40%;
+}
+
+.asset-item {
+  background: #f2f4f7;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.asset_balance_title{
+  font-size: 13px;
+}
+
+.asset-item .asset-info {
+  display: flex;
+  align-items: center;
+}
+
+.asset-item .asset-info img {
+  width: 21px;
+  height: 21px;
+  margin-right: 10px;
+}
+
+.asset-item .asset-info p {
+  font-size: 14px;
+  color: #131419;
+  margin: 0;
+}
+
+.asset-item .asset-details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.asset-item .asset-details div {
+  flex: 1;
+}
+
+.asset-item .asset-details p {
+  font-size: 12px;
+  margin: 0;
+}
+
+.asset-item .asset-details .available {
+  font-weight: 600;
+}
+
+.asset-item .asset-details .frozen {
+  text-align: center;
+}
+
+.asset-item .asset-details .valuation {
+  text-align: right;
+}
+
+/* Bottom Navigation */
+.bottom-nav {
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  height: 56px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  align-items: center;
+}
+
+.bottom-nav .nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 12px;
+  color: #000;
+}
+
+.bottom-nav .nav-item.active {
+  color: #106cf5;
+}
+
+
+.bottom-nav .nav-item img {
+  width: 25px;
+  margin-bottom: 2px;
+}
+.account-section{
+    width: 90%;
+    margin: 0 auto;
+}

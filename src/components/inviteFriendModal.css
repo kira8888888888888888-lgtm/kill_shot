@@ -1,0 +1,96 @@
+/* Modal Overlay */
+.modal-overlay_invite {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+/* Modal Content */
+.modal-content_invite {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  width: 400px;
+  max-width: 90%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Modal Header */
+.modal-header_invite {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+}
+
+.modal-header_invite h2 {
+  font-size: 17px;
+  margin: 0;
+}
+
+.modal-header_invite button {
+  background: none;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+  color: #007bff;
+  font-weight: bold;
+}
+
+/* Modal Body */
+.modal-body_invite {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Input Field */
+.modal-body_invite input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Button */
+.modal-body_invite button {
+  padding: 8px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.modal-body_invite button:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+.modal-body_invite button:not(:disabled):hover {
+  background-color: #0056b3;
+}
+
+/* Message */
+.modal-body_invite p {
+  color: #333;
+  font-size: 14px;
+  text-align: center;
+  margin: 0;
+}

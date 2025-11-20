@@ -1,0 +1,78 @@
+.user_header-right_div{
+    display: flex;
+    align-items: center;
+    gap: 3%;
+    width: 40%;
+    
+}
+.user_header-parent_div{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    max-width: 88%;
+    margin: 0 auto;
+    padding-bottom: 3%;
+    padding-top: 4%;
+}
+.user_header-right_div_img{
+    width: 26px;
+    height: 55%;
+    background: #135ecd;
+    border-radius: 100%;
+}
+.user_header-right_div_user_email{
+    font-size: 12px;
+    color: #fff;
+}
+.user_bottom_navigation_parent_div{
+    display: flex;
+    font-size: .60rem;
+    justify-content: space-around;
+    width: 100%;
+    align-items: baseline;
+    text-align: center;
+    background: #0b1838;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+.user_bottom_navigation_img{
+    width:20px;
+    padding-bottom: 2%;
+    height: 20px;
+}
+.user_bottom_navigation_link{
+    max-width: 168px;
+    min-width: 80px;
+}
+.user_bottom_navigation_all_parent_div{
+    position: fixed;
+    width: 100%;
+    bottom: 0%;
+    z-index: 999;
+}
+.active-link {
+    background-color: rgb(0 0 0 / 20%);
+    font-weight: bold;
+    max-width: 168px;
+    min-width: 80px;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    font-size: 12px;
+    border-radius: 8%;
+    
+}
+.user_bottom_navigation_link_p{
+    color: white;
+    font-size: 12px;
+
+}
+.user_header-parent_div_button{
+        padding: 6px 20px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 12px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+}

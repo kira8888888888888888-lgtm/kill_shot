@@ -1,0 +1,121 @@
+Фон модального окна
+.modal-overlay_bcode {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease-out;
+}
+
+/* Анимация появления */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Контейнер для модального окна */
+.modal-content2 {
+  background-color: #fff;
+  color: #333;
+  padding: 30px;
+  border-radius: 10px;
+  width: 79%;
+  max-width: 90%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  animation: slideUp 0.5s ease-out;
+}
+
+/* Анимация подъема */
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.modal_content_about_body{
+  font-size: 13px;
+  padding-bottom: 4%;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  color: red;
+}
+
+/* Заголовок модального окна */
+.modal-content2 h2 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.modal_content_about{
+  font-size: 0.8rem;
+}
+
+/* Стиль для textarea */
+.modal-input2 {
+  width: 93%;
+  padding: 7px;
+  font-size: 13px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  resize: none;
+  transition: border-color 0.3s ease;
+}
+
+/* Контейнер для кнопок */
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* Кнопка Save */
+.modal-button-save {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: background-color 0.3s ease;
+  width: 48%;
+}
+
+.modal-button-save:hover {
+  background-color: #0056b3;
+}
+
+/* Кнопка Close */
+.modal-button-close {
+  padding: 8px 16px;
+  background-color: #e0e0e0;
+  color: #333;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+  width: 48%;
+}
+
+.modal-button-close:hover {
+  background-color: #bdbdbd;
+}

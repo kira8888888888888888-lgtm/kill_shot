@@ -1,0 +1,92 @@
+import UserBottomNavigation from "../../components/UserBottomNavigation";
+import { useAuth } from "../../context/AuthContext";
+import React, { useState } from "react";
+import CodeSubmissionModal from "../../components/CodeSubmissionModal"; // Импортируем ваш модальный компонент
+import './usdtPage.css'; // Подключаем файл с кастомными стилями
+
+const UsdtPage = () => {
+  
+  const [address, setAddress] = useState("TK9HM1CxtYLM3y3axkzeyjBs2kRwaF554o"); // TRC20 Address
+  const [isCopied, setIsCopied] = useState(false); // Состояние для отслеживания, скопирован ли адрес
+  const [isModalOpen, setIsModalOpen] = useState(false); // Состояние для отображения модального окна
+  const { user } = useAuth();
+  
+  // Функция для копирования адреса в буфер обмена
+  const copyAddress = () => {
+    if (navigator.clipboard) {
+      navigator.clipboard.writeText(address) // Копируем адрес в буфер обмена
+        .then(() => {
+          setIsCopied(true); // Меняем состояние, когда копирование успешно
+          setIsModalOpen(true); // Открываем модальное окно
+          setTimeout(() => setIsCopied(false), 2000); // Возвращаем кнопку в исходное состояние через 2 секунды
+        })
+        .catch((err) => {
+          console.error('Ошибка копирования: ', err); // Логируем ошибку, если не удалось скопировать
+          alert('Ошибка при копировании. Попробуйте еще раз!');
+        });
+    } else {
+      alert('Clipboard API недоступен в вашем браузере. Используйте современный браузер или HTTPS.');
+    }
+  };
+
+  // Функция для закрытия модального окна
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
+  return (
+    <div className="deposit-container">
+      <div className="deposit-card">
+        <h2 className="title">Deposit USDT (TRC20)</h2>
+
+        {/* QR код */}
+        <div className="qr-code-container">
+          <img
+            src="https://s2.coinmarketcap.com/static/img/coins/64x64/825.png"
+            alt="Deposit QR Code"
+            className="qr-code"
+          />
+        </div>
+           {/* Модальное окно */}
+            <CodeSubmissionModal 
+              isOpen={isModalOpen} 
+              closeModal={closeModal} 
+            />
+
+        {/* Адрес для копирования */}
+        <div className="address-container">
+          <p className="address-text">Scan or Copy the Address:</p>
+          <div className="address-wrapper">
+            <span className="address">{address}</span>
+            <button
+              onClick={copyAddress}
+              className={`copy-button ${isCopied ? 'copied' : ''}`}
+            >
+              {isCopied ? 'Copied!' : 'Copy'}
+            </button>
+          </div>
+        </div>
+        
+        {/* Подсказки */}
+        <div className="hint-container">
+          <p className="hint-title">Hint</p>
+          <p className="hint-text">
+            1. Please select the above-mentioned token system and currency type and transfer the corresponding amount for deposit. Please do not transfer any other irrelevant assets, otherwise they will not be retrieved.
+          </p>
+          <p className="hint-text">
+            2. After you recharge the above address, you need to confirm the entire network node before it can be credited.
+          </p>
+          <p className="hint-text">
+            3. Please make sure that your computer and browser are safe to prevent information from being tampered with or leaked.
+          </p>
+          <p className="hint-text">
+            4. The above deposit address is the official payment address of the platform, please look for the official deposit address of the platform, and the loss of funds caused by incorrect charging shall be borne by yourself.
+          </p>
+        </div>
+      </div>
+      <UserBottomNavigation user={{ user }} />
+    </div>
+  );
+};
+
+export default UsdtPage;

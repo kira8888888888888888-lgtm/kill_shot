@@ -1,0 +1,39 @@
+.crypto-table {
+  width: 93%;
+  padding-bottom: 80px;
+  margin: 0 auto;
+}
+
+.crypto-table-header,
+.crypto-table-row {
+  display: flex;
+  font-size: 12px;
+  margin-top: 8px;
+  align-items: center;
+}
+
+.crypto-table-header {
+  color: #656e7b;
+}
+
+.crypto-pair {
+  flex: 0 0 24%;
+  text-align: left;
+}
+.crypto-table-header > div{
+    color: rgb(255, 255, 255);
+}
+.crypto-price,
+.crypto-change {
+  flex: 0 0 38%;
+  text-align: center;
+}
+
+.crypto-change {
+  height: 35px;
+  width: 83px;
+  border-radius: 3px;
+  color: white;
+  line-height: 35px;
+  text-align: center;
+}

@@ -1,0 +1,92 @@
+/* Основной контейнер модального окна */
+.verification-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Контейнер содержимого модального окна */
+.verification-modal__content {
+  background-color: rgb(36, 36, 36);
+  padding: 2rem;
+  border-radius: 8px;
+  width: 65%;
+}
+
+/* Заголовок модального окна */
+.verification-modal__title {
+  font-size: .8rem;
+  margin-bottom: .3rem;
+  text-align: center;
+  color: white;
+}
+
+/* Описание для email */
+.verification-modal__description {
+  font-size:.5rem;
+  text-align: center;
+  margin-bottom: .5rem;
+  color: #aaa;
+}
+.verification-modal__description > b{
+    color: #aaa;
+}
+/* Стиль для формы */
+.verification-modal__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.verification-modal__input {
+  width: 93%;
+  padding: 9px;
+  font-size: .5rem;
+  margin-bottom: 1rem;
+  background-color:  rgb(36, 36, 36);
+  color: white;
+}
+
+.verification-modal__button {
+  width: 100%;
+  padding: 5px;
+  font-size: .5rem;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.verification-modal__button:disabled {
+  background-color: #aaa;
+}
+
+.verification-modal__cancel-button {
+  margin-top: 10px;
+  background-color: #f44336;
+}
+
+.verification-modal__message {
+  font-size: 12px;
+  margin-top: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.verification-modal__message.success {
+  font-size: 12px;
+  color: green;
+}
+
+.verification-modal__message.error {
+  font-size: 12px;
+  color: red;
+}

@@ -1,0 +1,57 @@
+.section3_bg_div{
+    background-image: url('../images/section_3_bg_trade.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 4.8%;
+}
+
+.section3_h2{
+    font-weight: 700;
+    font-size: 1.375rem;
+    color: #c05bdd;
+    margin-bottom: 6.25rem;
+}
+.section3_small_div{
+    display: flex;
+    gap: 35px;
+}
+
+.section3_p_1,.section3_p_3,.section3_p_5{
+    color: white;
+}
+
+.section3_p_2{
+    color: hsla(0,0%,100%,.54);
+    padding-bottom: 8%;
+    
+}
+
+.section3_p_3{
+    font-size: 1.25rem;
+    font-weight: 700;
+    padding-bottom: 7px;
+    
+}
+
+.section3_p_1{
+    font-size: 1.25rem;
+    font-weight: 700;
+    padding-bottom: 7px;
+}
+
+.section3_p_4{
+    color: hsla(0, 0%, 100%, .54);
+    padding-bottom: 7%;
+}
+
+.section3_p_5{
+    font-size: 1.25rem;
+    font-weight: 700;
+    padding-bottom: 7px;
+
+}
+
+.section3_p_6{
+    color: hsla(0, 0%, 100%, .54);
+    
+}

@@ -1,0 +1,127 @@
+.section_5_all_parent_div{
+    background-color: #242424;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    padding: 5.25rem;
+    gap: 10%;
+}
+
+.section_5_poster{
+    width: 69.25rem;
+    margin-left: 1.25rem;
+}
+
+.section_5_right_h2{
+    font-weight: 700;
+    font-size: 2.25rem;
+    color: #c05bdd;
+}
+
+.trade-back-title1{
+    margin-top: .625rem;
+    font-size: 1rem;
+    color: hsla(0, 0%, 100%, .54);
+}
+
+
+.section_5_small_div_right_side{
+    display: flex;
+    margin-top: 3.75rem;
+}
+
+.trade-back-title3{
+    padding-top: 3%;
+    padding-left: 2%;
+    color: #fff;;
+    font-size: .875rem;
+}
+
+.trade-back-title2{
+    color: #fff;
+    padding-left: 2%;
+    font-size: .875rem;
+    
+}
+
+
+.trade-back-title4{
+    padding-top: 2%;
+    color: #fff;
+    padding-left: 2%;
+    font-size: .875rem;
+
+}
+.trade-back-title5{
+    padding-top: 4%;
+    color: #fff;
+    padding-left: 2%;
+    font-size: .875rem;
+}
+
+.trade-back-title6{
+     padding-top: 3%;
+    color: #fff;
+    padding-left: 2%;
+    font-size: .875rem;
+}
+
+.section_5_right_p_div{
+    width: 100%;
+}
+
+.section_5_qr_div{
+    width: 44%;
+    gap: 10%;
+    margin-top: 2.5rem;
+    display: flex;
+    align-items: center;
+    border: .0625rem solid hsla(0,0%,100%,.2);
+    border-radius: .625rem .625rem .625rem .625rem;
+    padding: .625rem 1.875rem .625rem .625rem;
+}
+
+.section_5_qr_img{
+    width: 6.25rem;
+    height: 6.25rem;
+}
+
+.section_5_qr_span{
+    color: hsla(0, 0%, 100%, .54);
+}
+
+.section_5_downloadBox{
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    padding-top: 3%;
+}
+
+.section_5_downloadBox_firts_small{
+    width: 46%;
+    height: 2.75rem;
+    border: .0625rem solid hsla(0, 0%, 100%, .2);
+    border-radius: .625rem .625rem .625rem .625rem;
+    opacity: 1;
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3%;
+}
+
+.section_5_downloadBox_firts_small_appstore{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section_5_downloadBox_firts_small_appstore_span{
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 2.5rem;
+    color: #fff;
+    
+}

@@ -1,0 +1,21 @@
+.section2_parent_div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #242424;
+    padding: 1.2% 5%;
+}
+
+.section2_lefside_small_div{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.section2_rightside_small_div_p,.section2_leftside_small_div_p{
+    color: white;
+}
+
+.section2_trading_bg{
+    width: 100%;
+}

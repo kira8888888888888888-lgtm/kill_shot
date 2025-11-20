@@ -1,0 +1,45 @@
+.modal-overlay_for_users{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: scroll;
+}
+
+.modal-content_for_users{
+    text-align: center;
+    padding: 6%;
+    background-color: #106cf5;
+    border: 1px solid rgba(255, 255, 255, 0.342);
+    border-radius: 10px;
+    width: 78%;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.modal-content_for_users_h3{
+    font-size: 18px;
+    text-align: center;
+}
+
+.modal-content_for_users button {
+    width: 100%;
+    padding: 6px 20px;
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 18%;
+}
+.close-btn_for_users_p{
+    padding-top: 3%;
+    color: white;
+    font-size: 16px;
+}
