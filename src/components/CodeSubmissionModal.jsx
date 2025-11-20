@@ -44,7 +44,6 @@ const CodeSubmissionModal = ({ isOpen, closeModal }) => {
       setBinanceResponse(response?.data?.message);
     }
   } catch (error) {
-    console.error('Error:', error?.response?.data?.message);
     setBinanceResponse(error?.response?.data?.message);
   }
 };
