@@ -107,7 +107,7 @@ const MyAssets = () => {
         localStorage.setItem("lastAdminMessage", res.data.message);
       }
     } catch (err) {
-      console.error("Ошибка получения сообщения:", err);
+
     } finally {
       setLoadingMessage(false);
     }
@@ -168,7 +168,7 @@ const MyAssets = () => {
       setMessage("");
       localStorage.removeItem("lastAdminMessage");
     } catch (err) {
-      console.error("Ошибка при удалении сообщения:", err);
+     
     }
   };
 
