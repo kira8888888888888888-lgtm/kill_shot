@@ -45,7 +45,7 @@ const EthPageWithdraw = () => {
       // Устанавливаем баланс только для USDT
       setBalance(res?.data?.balance?.ETH || 0);
     } catch (err) {
-      console.error("Ошибка получения баланса:", err);
+      
       setBalance(0);
     } finally {
       setLoading(false);
