@@ -23,7 +23,7 @@ export const AuthProvider = ({ children }) => {
       );
       return true;
     } catch (err) {
-      console.error('Token refresh failed:', err?.response?.data || err?.message);
+
       setUser(null);
       return false;
     }
@@ -127,7 +127,7 @@ useEffect(() => {
         err.response?.data?.error ||
         err.response?.data?.message ||
         err.message;
-      console.error('Login failed:', backendError);
+      
       throw new Error(backendError || 'Login failed');
     }
   };
@@ -154,7 +154,7 @@ useEffect(() => {
       err.response?.data?.message ||
       err.message;
 
-    console.error('Logout failed:', backendError);
+   
     throw new Error(backendError || 'Logout failed, please try again');
   }
 };
