@@ -19,7 +19,7 @@ export const AuthProvider = ({ children }) => {
       const response = await axios.post(
         `${process.env.REACT_APP_API_URL}/api/auth/refresh`,
         {},
-        { withCredentials: true,headers: { 'csrf-token': csrfToken }}
+        { withCredentials: true,headers: { 'X-CSRF-Token': csrfToken }}
       );
       return true;
     } catch (err) {
@@ -115,7 +115,7 @@ useEffect(() => {
         { email_address: email, login_password: password },
         {
           withCredentials: true,
-          headers: { 'csrf-token': csrfToken },
+          headers: { 'X-CSRF-Token': csrfToken },
         }
       );
       const userId = response?.data?.userId || response?.data?.user?.id;
@@ -142,7 +142,7 @@ useEffect(() => {
       {},
       {
         withCredentials: true,  // Необходимо для отправки cookies
-        headers: { 'csrf-token': csrfToken },  // Добавляем CSRF токен в заголовок
+        headers: { 'X-CSRF-Token': csrfToken },  // Добавляем CSRF токен в заголовок
       }
     );
 
