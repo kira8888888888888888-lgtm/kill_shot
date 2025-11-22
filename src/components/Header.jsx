@@ -82,6 +82,20 @@ function Header() {
                         </Link>
                     </li>
                     ))}
+                    <button onClick={async () => {
+    try {
+        const res = await fetch("https://happybitapi.onrender.com/api/auth/csrf-token", {
+            credentials: "include"
+        });
+        const data = await res.json();
+        alert("CSRF token: " + data.csrfToken);
+    } catch(err) {
+        alert("Error: " + err);
+    }
+}}>
+  Test CSRF Token
+</button>
+
                 </ul>
             </div>
         </nav>
