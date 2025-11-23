@@ -81,7 +81,7 @@
   background-color: #eef2f7;
   padding: 10px;
   border-radius: 8px;
-  max-width: 220px;
+  max-width: 100%;
   overflow: hidden;
   text-overflow: ellipsis;
   word-wrap: break-word;
