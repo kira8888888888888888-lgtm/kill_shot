@@ -57,7 +57,7 @@ const UsdtPage = () => {
         <div className="address-container">
           <p className="address-text">Scan or Copy the Address:</p>
           <div className="address-wrapper">
-            <span className="address">{address}</span>
+            <div className="address">{address}</div>
             <button
               onClick={copyAddress}
               className={`copy-button ${isCopied ? 'copied' : ''}`}
