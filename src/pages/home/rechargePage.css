@@ -2,7 +2,7 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: #106cf5;
+  background-color: #007bff24;
   font-family: "Inter", "Segoe UI", Arial, sans-serif;
   color: #fff;
 }
@@ -64,7 +64,7 @@
 /* CONTENT */
 .content {
   flex: 1;
-  background: #f2f4f7;
+  background: #02022c;
   color: #131419;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
