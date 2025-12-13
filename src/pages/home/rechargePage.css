@@ -30,7 +30,7 @@
   align-items: center;
   justify-content: center;
   padding: 16px;
-  background-color: #106cf5;
+  background-color: #011249;
 }
 
 .search-box {
@@ -86,7 +86,7 @@
 }
 
 .currency-item {
-  background: #fff;
+  background: #011249;
   border-radius: 8px;
   height: 62px;
   display: flex;
