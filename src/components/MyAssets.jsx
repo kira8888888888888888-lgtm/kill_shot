@@ -204,8 +204,8 @@ const MyAssets = () => {
 
       {/* ID */}
       <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-evenly' }}>
-        <h2 style={{ fontSize: '14px', fontWeight: '600' }}>Your ID </h2>
-        <span style={{ fontSize: '13px', fontWeight: '600' }}>
+        <h2 style={{ fontSize: '14px', fontWeight: '600',color:'azure' }}>Your ID </h2>
+        <span style={{ fontSize: '13px', fontWeight: '600',color:'azure' }}>
           {userId}
         </span>
         <button
