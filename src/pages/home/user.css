@@ -25,13 +25,14 @@
     color: #fff;
 }
 .user_bottom_navigation_parent_div{
+    border:1px solid #02024b7a;
     display: flex;
     font-size: .60rem;
     justify-content: space-around;
     width: 100%;
     align-items: baseline;
     text-align: center;
-    background: #0b1838;
+    background: #007bff;
     padding-top: 3%;
     padding-bottom: 3%;
 }
