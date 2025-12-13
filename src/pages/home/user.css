@@ -25,7 +25,7 @@
     color: #fff;
 }
 .user_bottom_navigation_parent_div{
-    border:1px solid #02024b7a;
+    box-shadow: 6px 1px 7px 2px #00000057;
     display: flex;
     font-size: .60rem;
     justify-content: space-around;
