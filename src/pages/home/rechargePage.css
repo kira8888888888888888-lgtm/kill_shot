@@ -100,7 +100,6 @@
 }
 
 .currency-item:hover {
-  background: #f9f9f9;
   transform: translateY(-1px);
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
 }
